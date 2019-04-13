@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+nav,
+footer {
+  padding: 1% 0;
+  background-color: #aaaaaa;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+header {
+  /* background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5) ), url('/images/dtla-night.jpg'); */
+  background-image: url("/images/dtla-night.jpg");
+  background-size: cover;
+  padding: 10%;
+  color: white;
+}
+
+section {
+  min-height: 200px;
+  margin: 50px 0;
+  padding: 6% 0;
+  background-color: #dddddd;
+}
+
+section:nth-child(even) {
+  background-color: white;
+}
+
+li {
+  list-style: none;
+}
+
+.projects-list li {
+  padding: 10% 0;
+}
