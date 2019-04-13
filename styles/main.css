@@ -30,7 +30,7 @@ main {
 
 header {
   /* background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5) ), url('/images/dtla-night.jpg'); */
-  background-image: url("/images/dtla-night.jpg");
+  background-image: url("../images/dtla-night.jpg");
   background-size: cover;
   padding: 10%;
   color: white;
