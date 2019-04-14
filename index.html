@@ -8,6 +8,8 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto|Source+Sans+Pro" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
@@ -22,7 +24,7 @@
   </nav>
 
   <header role="banner">
-    <h1 class="hero-name">hello, my name is <div class="name">Nick Lee</div> and I build things by talking with computers.</h1>
+    <h1 class="hero">hello, my name is <div class="name">Nick Lee</div> and I build things by talking with computers.</h1>
     <p class="hero-tag">{ Tenacious Problem Solver; Meticulous in Execution }</p>
   </header>
 
@@ -32,18 +34,22 @@
       <ul class="">
         <li class="project">
           <div class="project-container">
-            <img src="images/quiz-app.png" alt="Quiz App Thumbnail">
+            <img class="project-thumb" src="images/quiz-app.png" alt="Quiz App Thumbnail">
             <h3 class="project-title">Trivia Quiz App</h3>
-            <p class="project-tech">HTML CSS JavaScript</p>
+            <div class="project-tech">
+              <i class="fab fa-html5 fa-lg"></i>
+              <i class="fab fa-css3-alt fa-lg"></i>
+              <i class="fab fa-js-square fa-lg"></i>
+            </div>
             <p class="project-description">Quiz App is a simple trivia quiz app that obtains its cache of questions from an open source api. Most notably the app
             tracks a user's high score.</p>
           </div>
         </li>
-        <li class="project">Project 2</li>
       </ul>
     </section>
 
     <section class="about-me">
+      <h2 class="about-title">About Me</h2>
       <p class="about-me-text">My love for building things and inventing creative and useful things drive me. So, I channel my builder energy into
       computers to make cool applications for people to use. I also enjoy the struggle of learning new things and strive to
       struggle (at least a little) every day. My hobbies include model building, video games, badminton, watching movies, and
@@ -53,15 +59,25 @@
     </section>
 
     <section class="contact">
+      <h2 class="contact-title">Contact</h2>
       <ul class="contact-list">
-        <li>github</li>
-        <li>linkedin</li>
-        <li>email</li>
-        <li>Resume</li>
+        <li><a target="_blank" href="https://github.com/dvnx"><i class="fab fa-github-square fa-2x"></i></a></li>
+        <li><a target="_blank" href="https://www.linkedin.com/in/nickjjlee/"><i class="fab fa-linkedin fa-2x"></i></a></li>
+        <li><a href="mailto:leexnick@gmail.com"><i class="fas fa-envelope-square fa-2x"></i></a></li>
       </ul>
+      <div class="contact-resume">
+        <label for="resume-thumbnail">R&eacute;sum&eacute;</label>
+        <a target="_blank" href="resume/nicholas-lee.pdf">
+          <img src="images/nicholas-lee-thumb.png" alt="Resume Thumbnail" id="resume-thumbnail">
+        </a>
+      </div>
     </section>
+
+    <div class="arrow-top-of-page">
+      <a href="/index.html"><i class="fas fa-caret-square-up fa-lg"></i></a>
+    </div>
   </main>
   
-  <footer role="content-info">Footer</footer>
+  <footer role="content-info"><i class="far fa-copyright fa-xs"> 2019 Nick J. Lee</i></footer>
 </body>
 </html>

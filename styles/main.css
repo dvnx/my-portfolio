@@ -4,10 +4,12 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: 20px;
+  font-size: 3vw;
   line-height: 1.5;
-  /* background-color: #010a19; */
-  /* color: #fffec9; */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 ul {
@@ -29,7 +31,6 @@ a:hover {
 nav,
 footer {
   padding: 1% 0;
-  /* background-color: #034078; */
   background-color: #010a19;
   color: #fefcfb;
 }
@@ -58,15 +59,12 @@ li.nav-home {
 }
 
 main {
-  max-width: 1000px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
 header {
   font-family: 'Source Sans Pro', sans-serif;
-  /* background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5) ), url('../images/dtla-night.jpg'); */
-  /* background-image: url("../images/dtla-night.jpg"); */
-  /* background-color: #034078; */
   background-color: #2d3436;
   background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
   background-size: cover;
@@ -81,8 +79,9 @@ header {
   color: #f28785;
 }
 
-.hero-name {
-  width: 50%
+.hero {
+  width: 75%;
+  font-size: 8vw;
 }
 
 .hero-tag {
@@ -91,11 +90,81 @@ header {
 }
 
 section {
-  min-height: 200px;
-  margin: 50px 0;
-  padding: 6% 0;
+  max-width: 90%;
+  margin: auto;
+  padding: 0 0 6% 0;
 }
 
-.projects-list li {
-  padding: 5% 0;
+section > h2 {
+  font-size: 5vw;
+  text-align: center;
+  border-bottom: 2px solid black;
+  padding-bottom: 2px;
+}
+
+.project-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-thumb {
+  border: 0.5vw solid grey;
+  border-top-width: 4vw;
+  border-radius: 5px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.project-title {
+  color: #010a19;
+  padding-left: 2vw;
+  margin-bottom: 0;
+}
+
+.project-tech {
+  padding-left: 2vw;
+  margin-bottom: 0;
+}
+
+.project-description {
+  margin: 2vw 1vw;
+}
+
+.contact-list {
+  max-width: 60%;
+  margin: 0 auto 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contact-resume {
+  font-size: 2vw;
+  display: flex;
+  flex-direction: column;
+  padding-top: 5px;
+  align-items: center;
+  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
+}
+
+#resume-thumbnail {
+  border: 1px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#resume-thumbnail:hover {
+  box-shadow: 0 4px 8px 0 rgba(242,135,133,1), 0 6px 20px 0 rgba(242,135,133,1);
+}
+
+.arrow-top-of-page {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+
+footer {
+  padding: 0;
+  text-align: center;
+  font-size: 2vw;
 }
