@@ -15,11 +15,11 @@
 <body>
   <nav role="navigation">
     <ul class="nav-btns">
-      <li class="nav-btn nav-home"><a href="">NL</a></li>
-      <li class="nav-btn nav-projects"><a target="_blank" href="https://www.google.com">Projects</a></li>
-      <li class="nav-btn nav-about"><a target="_blank" href="https://www.google.com">About</a></li>
-      <li class="nav-btn nav-resume"><a target="_blank" href="http://www.google.com">R&eacute;sum&eacute;</a></li>
-      <li class="nav-btn nav-contact"><a target="_blank" href="http://www.google.com">Contact</a></li>
+      <li class="nav-btn nav-home js-home"><a href="">NL</a></li>
+      <li class="nav-btn nav-projects js-projects"><a href="#projects-list">Projects</a></li>
+      <li class="nav-btn nav-about js-about"><a href="#about">About</a></li>
+      <li class="nav-btn nav-resume js-resume"><a href="#contact">R&eacute;sum&eacute;</a></li>
+      <li class="nav-btn nav-contact js-contact"><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
@@ -29,9 +29,9 @@
   </header>
 
   <main role="main">
-    <section class="projects-list">
+    <section class="projects-list" id="projects-list">
       <h2 class="projects-title">Projects</h2>
-      <ul class="">
+      <ul>
         <li class="project">
           <div class="project-container">
             <img class="project-thumb" src="images/quiz-app.png" alt="Quiz App Thumbnail">
@@ -62,7 +62,7 @@
       </ul>
     </section>
 
-    <section class="about-me">
+    <section class="about-me" id="about">
       <h2 class="about-title">About Me</h2>
       <div class="about-info">
         <p class="about-me-text">My love for building things and inventing creative and useful things drive me. So, I channel my builder energy into
@@ -74,7 +74,7 @@
       </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
       <h2 class="contact-title">Contact</h2>
       <ul class="contact-list">
         <li><a target="_blank" href="https://github.com/dvnx"><i class="fab fa-github-square fa-2x"></i></a></li>
@@ -89,11 +89,16 @@
       </div>
     </section>
 
-    <div class="arrow-top-of-page">
-      <a href="/index.html"><i class="fas fa-caret-square-up fa-lg"></i></a>
+    <div class="arrow-top-of-page js-arrow">
+      <a><i class="fas fa-caret-square-up fa-2x"></i></a>
     </div>
   </main>
   
   <footer role="content-info"><i class="far fa-copyright fa-xs"> 2019 Nick J. Lee</i></footer>
+
+  <!--Scripts-->
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+  <script src="scripts/index.js"></script>
 </body>
 </html>

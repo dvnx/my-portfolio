@@ -161,6 +161,7 @@ section > h2 {
   position: fixed;
   bottom: 3vw;
   right: 1vw;
+  cursor: pointer;
 }
 
 footer {
