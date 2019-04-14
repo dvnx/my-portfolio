@@ -5,10 +5,9 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
-  text-align: center;
   line-height: 1.5;
-  background-color: #010a19;
-  color: #fffec9;
+  /* background-color: #010a19; */
+  /* color: #fffec9; */
 }
 
 ul {
@@ -30,7 +29,8 @@ a:hover {
 nav,
 footer {
   padding: 1% 0;
-  background-color: #034078;
+  /* background-color: #034078; */
+  background-color: #010a19;
   color: #fefcfb;
 }
 
@@ -63,17 +63,31 @@ main {
 }
 
 header {
-  font: 'Source Sans Pro', sans-serif;
-  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5) ), url('/images/dtla-night.jpg');
+  font-family: 'Source Sans Pro', sans-serif;
+  /* background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5) ), url('../images/dtla-night.jpg'); */
   /* background-image: url("../images/dtla-night.jpg"); */
   /* background-color: #034078; */
+  background-color: #2d3436;
+  background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
   background-size: cover;
-  padding: 10%;
+  padding: 10% 10% 1% 10%;
   color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-h1 {
-  font-size: 100px;
+.name {
+  color: #f28785;
+}
+
+.hero-name {
+  width: 50%
+}
+
+.hero-tag {
+  color: #f28785;
+  text-align: center;
 }
 
 section {
