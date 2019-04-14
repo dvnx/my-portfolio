@@ -118,17 +118,21 @@ section > h2 {
 
 .project-title {
   color: #010a19;
-  padding-left: 2vw;
+  padding-left: 3vw;
   margin-bottom: 0;
 }
 
 .project-tech {
-  padding-left: 2vw;
+  padding-left: 4vw;
   margin-bottom: 0;
 }
 
 .project-description {
   margin: 2vw 1vw;
+}
+
+.project-links {
+  padding-left: 4vw;
 }
 
 .contact-list {
@@ -159,8 +163,8 @@ section > h2 {
 
 .arrow-top-of-page {
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: 1vw;
+  right: 1vw;
 }
 
 footer {
