@@ -5,7 +5,9 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 3vw;
+  color: #010a19;
   line-height: 1.5;
+  background-color: #f0f8ff;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -116,23 +118,18 @@ section > h2 {
   max-width: 100%;
 }
 
-.project-title {
-  color: #010a19;
-  padding-left: 3vw;
-  margin-bottom: 0;
+.project-info {
+  width: 90%;
+  margin: 0 auto;
 }
 
-.project-tech {
-  padding-left: 4vw;
-  margin-bottom: 0;
+#repo-link, #live-link {
+  margin: 0 10px;
 }
 
-.project-description {
-  margin: 2vw 1vw;
-}
-
-.project-links {
-  padding-left: 4vw;
+.about-info {
+  width: 90%;
+  margin: 0 auto;
 }
 
 .contact-list {
@@ -149,7 +146,6 @@ section > h2 {
   flex-direction: column;
   padding-top: 5px;
   align-items: center;
-  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
 }
 
 #resume-thumbnail {
@@ -163,12 +159,63 @@ section > h2 {
 
 .arrow-top-of-page {
   position: fixed;
-  bottom: 1vw;
+  bottom: 3vw;
   right: 1vw;
 }
 
 footer {
   padding: 0;
   text-align: center;
-  font-size: 2vw;
+  font-size: 11px;
+}
+
+@media only screen and (min-width: 640px) {
+  
+  .hero {
+    font-size: 48px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  body {
+    font-size: 16px;
+  }
+
+  header {
+    padding-top: 7%;
+  }
+
+  .hero {
+    font-size: 60px;
+  }
+
+  .hero-tag {
+    font-size: 24px;
+  }
+
+  main {
+    max-width: 900px;
+  }
+
+  section {
+    font-size: 1.5em;
+  }
+
+  section > h2 {
+    font-size: 36px;
+  }
+
+  .project-thumb {
+    border-top-width: 40px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  header {
+    padding-top: 4%;
+  }
+
+  .hero {
+    width: 50%;
+  }
 }
