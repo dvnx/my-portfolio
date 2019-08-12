@@ -104,16 +104,27 @@ section > h2 {
   padding-bottom: 2px;
 }
 
-.project-container {
+
+.project {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  border: 1px solid black;
+  border-radius: 5px 5px 0 0;
+  background-color: #010a19;
+  color: white;
+  box-shadow: 0 0 11px rgba(1, 10, 25, .6);
+}
+
+.project:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .project-thumb {
   border: 0.5vw solid grey;
   border-top-width: 4vw;
-  border-radius: 5px;
+  border-radius: 5px 5px 0 0;
   margin: 0 auto;
   max-width: 100%;
 }
@@ -121,10 +132,27 @@ section > h2 {
 .project-info {
   width: 90%;
   margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+#wiki-link {
+  color: dodgerblue;
+}
+
+#wiki-link:hover {
+  color: #f28785;
+}
+
+.tech-icon {
+  display: inline-block;
+  vertical-align: middle;
+  height: 32px;
+  filter: invert(100%);
 }
 
 #repo-link, #live-link {
   margin: 0 10px;
+  cursor: pointer;
 }
 
 .about-info {
