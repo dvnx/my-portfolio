@@ -104,16 +104,27 @@ section > h2 {
   padding-bottom: 2px;
 }
 
-.project-container {
+
+.project {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  border: 1px solid black;
+  border-radius: 5px 5px 0 0;
+  background-color: #010a19;
+  color: white;
+  box-shadow: 0 0 11px rgba(1, 10, 25, .6);
+}
+
+.project:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .project-thumb {
   border: 0.5vw solid grey;
   border-top-width: 4vw;
-  border-radius: 5px;
+  border-radius: 5px 5px 0 0;
   margin: 0 auto;
   max-width: 100%;
 }
@@ -121,10 +132,27 @@ section > h2 {
 .project-info {
   width: 90%;
   margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+#wiki-link {
+  color: dodgerblue;
+}
+
+#wiki-link:hover {
+  color: #f28785;
+}
+
+.tech-icon {
+  display: inline-block;
+  vertical-align: middle;
+  height: 32px;
+  filter: invert(100%);
 }
 
 #repo-link, #live-link {
   margin: 0 10px;
+  cursor: pointer;
 }
 
 .about-info {
@@ -137,37 +165,56 @@ section > h2 {
   margin: 0 auto 25px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
-.contact-resume {
-  font-size: 2vw;
+.resume-download-links {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#resume-light-link {
+  margin-right: 10px;
+}
+
+#resume-light-link,
+#resume-dark-link {
+  cursor: pointer;
+}
+
+#resume-img {
+  box-shadow: 0 0 11px rgba(1, 10, 25, .6);
+  width: 100%;
+}
+
+.resume-download-links h4 {
+  margin: 0 15px;
+}
+
+/* .resume {
   display: flex;
   flex-direction: column;
-  padding-top: 5px;
   align-items: center;
-}
-
-#resume-thumbnail {
-  border: 1px solid black;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-}
-
-#resume-thumbnail:hover {
-  box-shadow: 0 4px 8px 0 rgba(242,135,133,1), 0 6px 20px 0 rgba(242,135,133,1);
-}
+} */
 
 .arrow-top-of-page {
   position: fixed;
-  bottom: 3vw;
-  right: 1vw;
+  bottom: 30px;
+  right: 20px;
   cursor: pointer;
+  color: #f28785;
+}
+
+.arrow-top-of-page:hover {
+  transition: 0.3s;
+  transform: scale(1.2, 1.2);
 }
 
 footer {
   padding: 0;
   text-align: center;
-  font-size: 11px;
+  font-size: 16px;
 }
 
 @media only screen and (min-width: 640px) {

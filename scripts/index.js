@@ -36,7 +36,7 @@ function handleNavResume() {
     const navHeight = $('nav').outerHeight();
 
     $('html, body').animate({
-      scrollTop: ($('#contact').offset().top - navHeight)
+      scrollTop: ($('#resume').offset().top - navHeight)
     }, 500);
     event.preventDefault();
   });
@@ -44,7 +44,9 @@ function handleNavResume() {
 
 function handleNavContact() {
   $('.js-contact').click((event) => {
-    $('.js-resume').click();
+    $('html, body').animate({
+      scrollTop: ($(document).height())
+    }, 500)
   });
 }
 
