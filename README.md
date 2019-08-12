@@ -1,6 +1,6 @@
-Nick J. Lee Portfolio v0.1
+Nick J. Lee Portfolio v1
 ==========================
 
-## HTML, CSS, JS
+## HTML, CSS, JS (jQuery)
 
-[Live Portfolio](https://nickjlee.github.io/my-portfolio/)
+[Live Portfolio](https://nicklee.dev)
